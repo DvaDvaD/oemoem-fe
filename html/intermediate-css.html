@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intermediate CSS</title>
+    <style>
+      .flex {
+        display: flex;
+        justify-content: start;
+      }
+
+      .flex2 {
+        display: flex;
+        justify-content: end;
+      }
+
+      .flex3 {
+        display: flex;
+        justify-content: center;
+      }
+
+      .flex4 {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .flex5 {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .flex6 {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .flex7 {
+        display: flex;
+        align-items: start;
+        height: 500px;
+      }
+
+      .flex8 {
+        display: flex;
+        align-items: center;
+        height: 500px;
+      }
+
+      .flex9 {
+        display: flex;
+        align-items: end;
+        height: 500px;
+      }
+
+      .box {
+        background-color: red;
+        border: 2px solid black;
+        width: 100px;
+        height: 100px;
+      }
+
+      .box2 {
+        height: 100px;
+        flex-basis: 40%;
+        background-color: blue;
+        border: 2px dashed yellow;
+      }
+
+      .blue-bg {
+        background-color: lightblue;
+        border: 2px solid black;
+      }
+
+      .grow {
+        flex-grow: 1;
+      }
+
+      .shrink {
+        flex-shrink: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- justify-content -->
+    <div class="flex">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="flex2">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="flex3">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="flex4">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="flex5">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="flex6">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <!-- align-items -->
+    <div class="flex7">
+      <div class="box2"></div>
+      <div class="box2"></div>
+      <div class="box2"></div>
+    </div>
+    <div class="flex8">
+      <div class="box2"></div>
+      <div class="box2"></div>
+      <div class="box2"></div>
+    </div>
+    <div class="flex9">
+      <div class="box2"></div>
+      <div class="box2"></div>
+      <div class="box2 shrink"></div>
+    </div>
+
+    <div class="flex">
+      <div class="blue-bg">content</div>
+      <div class="blue-bg">content panjang panjang panjang</div>
+      <div class="blue-bg">pendek</div>
+    </div>
+  </body>
+</html>
