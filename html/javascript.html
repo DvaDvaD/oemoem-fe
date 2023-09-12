@@ -4,6 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+      }
+
+      .accordion {
+        background-color: black;
+        color: lightblue;
+        cursor: pointer;
+        padding: 18px;
+      }
+
+      .content {
+        background-color: darkslategray;
+        color: white;
+        display: none;
+        height: 300px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="box"></div>
+    <button>Ganti warna</button>
+    <button id="reset-button">Balikin warnanya</button>
+
+    <input type="text" />
+    <button id="submit-button">Submit</button>
+    <p id="hasil-submit"></p>
+
+    <div class="accordion">Pencet untuk melihat content!</div>
+    <div class="content">Ini adalah content tersembunyi!</div>
+
+    <script src="./../js/index.js"></script>
+  </body>
 </html>
