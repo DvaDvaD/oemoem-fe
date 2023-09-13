@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intermediate CSS</title>
+    <link rel="stylesheet" href="./../css/reset.css" />
     <style>
       .flex {
         display: flex;
@@ -38,31 +39,32 @@
       .flex7 {
         display: flex;
         align-items: start;
-        height: 500px;
+        height: 400px;
       }
 
       .flex8 {
         display: flex;
         align-items: center;
-        height: 500px;
+        height: 400px;
       }
 
       .flex9 {
         display: flex;
         align-items: end;
-        height: 500px;
+        height: 400px;
       }
 
       .box {
         background-color: red;
         border: 2px solid black;
-        width: 100px;
-        height: 100px;
+        padding: 30px;
+        color: white;
+        border-radius: 8px;
       }
 
       .box2 {
         height: 100px;
-        flex-basis: 40%;
+        width: 33%;
         background-color: blue;
         border: 2px dashed yellow;
       }
@@ -75,43 +77,39 @@
       .grow {
         flex-grow: 1;
       }
-
-      .shrink {
-        flex-shrink: 5;
-      }
     </style>
   </head>
   <body>
     <!-- justify-content -->
     <div class="flex">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
     </div>
     <div class="flex2">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
     </div>
     <div class="flex3">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
     </div>
     <div class="flex4">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
     </div>
     <div class="flex5">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
     </div>
     <div class="flex6">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
     </div>
 
     <!-- align-items -->
@@ -133,7 +131,7 @@
 
     <div class="flex">
       <div class="blue-bg">content</div>
-      <div class="blue-bg">content panjang panjang panjang</div>
+      <div class="blue-bg grow">content panjang panjang panjang</div>
       <div class="blue-bg">pendek</div>
     </div>
   </body>
