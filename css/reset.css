@@ -43,6 +43,7 @@ button {
   border: none;
   background: none;
   cursor: pointer;
+  color: white;
 }
 
 /* Resetting image styles */
